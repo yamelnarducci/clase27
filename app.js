@@ -3,6 +3,7 @@ const process = require('process');
 const restar = require('./restar')
 const {argv} = process;
 const sumar = require('./sumar')
+const multiplicar = require('./multiplicar')
 
 function calculadora(comando,a,b){
 
@@ -14,7 +15,7 @@ switch (comando) {
         return restar(a,b)
         
         case "multiplicar":
-        
+        return multiplicar(a,b)
         break;
         case "dividir":
         
